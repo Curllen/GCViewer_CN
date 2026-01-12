@@ -42,7 +42,7 @@ public class LocalisationHelper {
     
     private static ResourceBundle getBundle() {
         if (resourceBundle == null) {
-            resourceBundle = ResourceBundle.getBundle("localStrings");
+            resourceBundle = ResourceBundle.getBundle("localStrings", new UTF8Control());
         }
         
         return resourceBundle;
